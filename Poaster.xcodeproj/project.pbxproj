@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91354EF1DE0B14000AACA58 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91354EE1DE0B14000AACA58 /* MyProfileViewController.swift */; };
+		C9313EAD1D20F932007622A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EAC1D20F932007622A7 /* AppDelegate.swift */; };
+		C9313EB21D20F932007622A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9313EB01D20F932007622A7 /* Main.storyboard */; };
+		C9313EB41D20F932007622A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9313EB31D20F932007622A7 /* Assets.xcassets */; };
+		C9313EB71D20F932007622A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9313EB51D20F932007622A7 /* LaunchScreen.storyboard */; };
+		C9313EE71D20FADF007622A7 /* BusinessNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC11D20FADF007622A7 /* BusinessNameViewController.swift */; };
+		C9313EE81D20FADF007622A7 /* CallToActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC21D20FADF007622A7 /* CallToActionViewController.swift */; };
+		C9313EE91D20FADF007622A7 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC31D20FADF007622A7 /* ChangePasswordViewController.swift */; };
+		C9313EEA1D20FADF007622A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC41D20FADF007622A7 /* Constants.swift */; };
+		C9313EEB1D20FADF007622A7 /* DealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC51D20FADF007622A7 /* DealModel.swift */; };
+		C9313EEC1D20FADF007622A7 /* DealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC61D20FADF007622A7 /* DealTableViewCell.swift */; };
+		C9313EED1D20FADF007622A7 /* DealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC71D20FADF007622A7 /* DealTableViewController.swift */; };
+		C9313EEF1D20FADF007622A7 /* EditDefaultActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EC91D20FADF007622A7 /* EditDefaultActionViewController.swift */; };
+		C9313EF01D20FADF007622A7 /* EditDefaultFinalActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECA1D20FADF007622A7 /* EditDefaultFinalActionViewController.swift */; };
+		C9313EF11D20FADF007622A7 /* FacebookPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECB1D20FADF007622A7 /* FacebookPageModel.swift */; };
+		C9313EF21D20FADF007622A7 /* FBPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECC1D20FADF007622A7 /* FBPagesViewController.swift */; };
+		C9313EF31D20FADF007622A7 /* FinalActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECD1D20FADF007622A7 /* FinalActionViewController.swift */; };
+		C9313EF41D20FADF007622A7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECE1D20FADF007622A7 /* ForgotPasswordViewController.swift */; };
+		C9313EF51D20FADF007622A7 /* FreeTrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ECF1D20FADF007622A7 /* FreeTrialViewController.swift */; };
+		C9313EF61D20FADF007622A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED01D20FADF007622A7 /* HomeViewController.swift */; };
+		C9313EF71D20FADF007622A7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED11D20FADF007622A7 /* LoginViewController.swift */; };
+		C9313EF81D20FADF007622A7 /* MakePoastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED21D20FADF007622A7 /* MakePoastViewController.swift */; };
+		C9313EF91D20FADF007622A7 /* MyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED31D20FADF007622A7 /* MyProfileTableViewController.swift */; };
+		C9313EFB1D20FADF007622A7 /* OneDealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED51D20FADF007622A7 /* OneDealTableViewController.swift */; };
+		C9313EFC1D20FADF007622A7 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED61D20FADF007622A7 /* PagesViewController.swift */; };
+		C9313EFD1D20FADF007622A7 /* PoasterUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED71D20FADF007622A7 /* PoasterUtility.swift */; };
+		C9313EFE1D20FADF007622A7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED81D20FADF007622A7 /* RegisterViewController.swift */; };
+		C9313EFF1D20FADF007622A7 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313ED91D20FADF007622A7 /* ResetPasswordViewController.swift */; };
+		C9313F001D20FADF007622A7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EDA1D20FADF007622A7 /* SecondViewController.swift */; };
+		C9313F011D20FADF007622A7 /* SellerCustomerListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EDB1D20FADF007622A7 /* SellerCustomerListModel.swift */; };
+		C9313F021D20FADF007622A7 /* SellerCustomerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EDC1D20FADF007622A7 /* SellerCustomerListTableViewCell.swift */; };
+		C9313F031D20FADF007622A7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EDD1D20FADF007622A7 /* SettingsViewController.swift */; };
+		C9313F041D20FADF007622A7 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EDE1D20FADF007622A7 /* SocialViewController.swift */; };
+		C9313F061D20FADF007622A7 /* StripeDecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EE01D20FADF007622A7 /* StripeDecisionViewController.swift */; };
+		C9313F071D20FADF007622A7 /* StripeSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EE11D20FADF007622A7 /* StripeSetupViewController.swift */; };
+		C9313F081D20FADF007622A7 /* SubscriptionOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EE21D20FADF007622A7 /* SubscriptionOptionsViewController.swift */; };
+		C9313F0A1D20FADF007622A7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313EE41D20FADF007622A7 /* WelcomeViewController.swift */; };
+		C9313F131D210439007622A7 /* PoastPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9313F121D210439007622A7 /* PoastPreviewViewController.swift */; };
+		C9313F321D210CF1007622A7 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9313F0F1D20FF81007622A7 /* ProximaNova-Light.otf */; };
+		C9313F331D210CF1007622A7 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9313F101D20FF81007622A7 /* ProximaNova-Regular.otf */; };
+		C956E1151D27901A00166EE8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956E1141D27901A00166EE8 /* Utilities.swift */; };
+		C968F1D31D82F97700439CC8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C968F1CF1D82F97700439CC8 /* Fabric.framework */; };
+		C968F1D41D82F97700439CC8 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C968F1D01D82F97700439CC8 /* TwitterKit.framework */; };
+		C968F1D51D82F97700439CC8 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C968F1D11D82F97700439CC8 /* TwitterKitResources.bundle */; };
+		C968F1D61D82F97700439CC8 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C968F1D21D82F97700439CC8 /* TwitterCore.framework */; };
+		C968F1D81D82FA9700439CC8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C968F1D71D82FA9700439CC8 /* Crashlytics.framework */; };
+		C979DDBA1DEE8139002605F3 /* book-now.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB51DEE8139002605F3 /* book-now.png */; };
+		C979DDBB1DEE8139002605F3 /* book-now-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB61DEE8139002605F3 /* book-now-phone.png */; };
+		C979DDBC1DEE8139002605F3 /* call-now.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB71DEE8139002605F3 /* call-now.png */; };
+		C979DDBD1DEE8139002605F3 /* buy-now.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB81DEE8139002605F3 /* buy-now.png */; };
+		C979DDBE1DEE8139002605F3 /* check-it-out.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB91DEE8139002605F3 /* check-it-out.png */; };
+		EE45E4E80472D4402277DBEF /* Pods_Poaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC608827C3D01433F1649191 /* Pods_Poaster.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C4053BB6F6DA2070F90F6AB /* Pods-Poaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poaster/Pods-Poaster.debug.xcconfig"; sourceTree = "<group>"; };
+		4AA2A25DBD6B57DB7F567F4E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC608827C3D01433F1649191 /* Pods_Poaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C902A0991DC116C500277BB1 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		C902A09A1DC116C500277BB1 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		C902A09B1DC116C500277BB1 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		C902A09C1DC116C500277BB1 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		C902A09D1DC116C500277BB1 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		C902A09E1DC116C500277BB1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		C902A09F1DC116C500277BB1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Frameworks/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		C91354EE1DE0B14000AACA58 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		C91354F01DE1818400AACA58 /* Poaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poaster.entitlements; sourceTree = "<group>"; };
+		C9313EA91D20F932007622A7 /* Poaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9313EAC1D20F932007622A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9313EB11D20F932007622A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9313EB31D20F932007622A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9313EB61D20F932007622A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C9313EB81D20F932007622A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9313EC11D20FADF007622A7 /* BusinessNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessNameViewController.swift; sourceTree = "<group>"; };
+		C9313EC21D20FADF007622A7 /* CallToActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallToActionViewController.swift; sourceTree = "<group>"; };
+		C9313EC31D20FADF007622A7 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		C9313EC41D20FADF007622A7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9313EC51D20FADF007622A7 /* DealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
+		C9313EC61D20FADF007622A7 /* DealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealTableViewCell.swift; sourceTree = "<group>"; };
+		C9313EC71D20FADF007622A7 /* DealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealTableViewController.swift; sourceTree = "<group>"; };
+		C9313EC91D20FADF007622A7 /* EditDefaultActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDefaultActionViewController.swift; sourceTree = "<group>"; };
+		C9313ECA1D20FADF007622A7 /* EditDefaultFinalActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDefaultFinalActionViewController.swift; sourceTree = "<group>"; };
+		C9313ECB1D20FADF007622A7 /* FacebookPageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPageModel.swift; sourceTree = "<group>"; };
+		C9313ECC1D20FADF007622A7 /* FBPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBPagesViewController.swift; sourceTree = "<group>"; };
+		C9313ECD1D20FADF007622A7 /* FinalActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalActionViewController.swift; sourceTree = "<group>"; };
+		C9313ECE1D20FADF007622A7 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C9313ECF1D20FADF007622A7 /* FreeTrialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeTrialViewController.swift; sourceTree = "<group>"; };
+		C9313ED01D20FADF007622A7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C9313ED11D20FADF007622A7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9313ED21D20FADF007622A7 /* MakePoastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakePoastViewController.swift; sourceTree = "<group>"; };
+		C9313ED31D20FADF007622A7 /* MyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewController.swift; sourceTree = "<group>"; };
+		C9313ED51D20FADF007622A7 /* OneDealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneDealTableViewController.swift; sourceTree = "<group>"; };
+		C9313ED61D20FADF007622A7 /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
+		C9313ED71D20FADF007622A7 /* PoasterUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoasterUtility.swift; sourceTree = "<group>"; };
+		C9313ED81D20FADF007622A7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C9313ED91D20FADF007622A7 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		C9313EDA1D20FADF007622A7 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C9313EDB1D20FADF007622A7 /* SellerCustomerListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCustomerListModel.swift; sourceTree = "<group>"; };
+		C9313EDC1D20FADF007622A7 /* SellerCustomerListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCustomerListTableViewCell.swift; sourceTree = "<group>"; };
+		C9313EDD1D20FADF007622A7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C9313EDE1D20FADF007622A7 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		C9313EE01D20FADF007622A7 /* StripeDecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeDecisionViewController.swift; sourceTree = "<group>"; };
+		C9313EE11D20FADF007622A7 /* StripeSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeSetupViewController.swift; sourceTree = "<group>"; };
+		C9313EE21D20FADF007622A7 /* SubscriptionOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionOptionsViewController.swift; sourceTree = "<group>"; };
+		C9313EE41D20FADF007622A7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C9313F0F1D20FF81007622A7 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		C9313F101D20FF81007622A7 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		C9313F121D210439007622A7 /* PoastPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoastPreviewViewController.swift; sourceTree = "<group>"; };
+		C956E1141D27901A00166EE8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C968F1CF1D82F97700439CC8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C968F1D01D82F97700439CC8 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		C968F1D11D82F97700439CC8 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		C968F1D21D82F97700439CC8 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		C968F1D71D82FA9700439CC8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		C979DDB51DEE8139002605F3 /* book-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-now.png"; sourceTree = "<group>"; };
+		C979DDB61DEE8139002605F3 /* book-now-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "book-now-phone.png"; sourceTree = "<group>"; };
+		C979DDB71DEE8139002605F3 /* call-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-now.png"; sourceTree = "<group>"; };
+		C979DDB81DEE8139002605F3 /* buy-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-now.png"; sourceTree = "<group>"; };
+		C979DDB91DEE8139002605F3 /* check-it-out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-it-out.png"; sourceTree = "<group>"; };
+		F0F17FAA5870829AED8A82A7 /* Pods-Poaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poaster/Pods-Poaster.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9313EA61D20F932007622A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE45E4E80472D4402277DBEF /* Pods_Poaster.framework in Frameworks */,
+				C968F1D81D82FA9700439CC8 /* Crashlytics.framework in Frameworks */,
+				C968F1D61D82F97700439CC8 /* TwitterCore.framework in Frameworks */,
+				C968F1D31D82F97700439CC8 /* Fabric.framework in Frameworks */,
+				C968F1D41D82F97700439CC8 /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143CA0E1C2E471517F91C3A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C902A0991DC116C500277BB1 /* FirebaseMessaging.framework */,
+				C902A09A1DC116C500277BB1 /* FirebaseAnalytics.framework */,
+				C902A09B1DC116C500277BB1 /* FirebaseCore.framework */,
+				C902A09C1DC116C500277BB1 /* FirebaseInstanceID.framework */,
+				C902A09D1DC116C500277BB1 /* GoogleInterchangeUtilities.framework */,
+				C902A09E1DC116C500277BB1 /* GoogleSymbolUtilities.framework */,
+				C902A09F1DC116C500277BB1 /* GoogleToolboxForMac.framework */,
+				C968F1D71D82FA9700439CC8 /* Crashlytics.framework */,
+				C968F1CF1D82F97700439CC8 /* Fabric.framework */,
+				C968F1D01D82F97700439CC8 /* TwitterKit.framework */,
+				C968F1D11D82F97700439CC8 /* TwitterKitResources.bundle */,
+				C968F1D21D82F97700439CC8 /* TwitterCore.framework */,
+				4AA2A25DBD6B57DB7F567F4E /* Pods.framework */,
+				AC608827C3D01433F1649191 /* Pods_Poaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1ECE523ED70EFCCF91F0667B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C4053BB6F6DA2070F90F6AB /* Pods-Poaster.debug.xcconfig */,
+				F0F17FAA5870829AED8A82A7 /* Pods-Poaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9245BE41D215DED004D7292 /* CTA_Images */ = {
+			isa = PBXGroup;
+			children = (
+				C979DDB51DEE8139002605F3 /* book-now.png */,
+				C979DDB61DEE8139002605F3 /* book-now-phone.png */,
+				C979DDB71DEE8139002605F3 /* call-now.png */,
+				C979DDB81DEE8139002605F3 /* buy-now.png */,
+				C979DDB91DEE8139002605F3 /* check-it-out.png */,
+			);
+			name = CTA_Images;
+			sourceTree = "<group>";
+		};
+		C9313EA01D20F932007622A7 = {
+			isa = PBXGroup;
+			children = (
+				C9313EAB1D20F932007622A7 /* Poaster */,
+				C9313EAA1D20F932007622A7 /* Products */,
+				143CA0E1C2E471517F91C3A8 /* Frameworks */,
+				1ECE523ED70EFCCF91F0667B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C9313EAA1D20F932007622A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EA91D20F932007622A7 /* Poaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9313EAB1D20F932007622A7 /* Poaster */ = {
+			isa = PBXGroup;
+			children = (
+				C91354F01DE1818400AACA58 /* Poaster.entitlements */,
+				C956E1131D278A2500166EE8 /* Classes */,
+				C9313EAC1D20F932007622A7 /* AppDelegate.swift */,
+				C9245BE41D215DED004D7292 /* CTA_Images */,
+				C9313EB31D20F932007622A7 /* Assets.xcassets */,
+				C9313F0D1D20FB98007622A7 /* Model and Cells */,
+				C9313EBE1D20F9EC007622A7 /* Storyboards */,
+				C9313F0B1D20FB2A007622A7 /* Controllers */,
+				C9313F111D20FF85007622A7 /* Resources */,
+				C9313F0E1D20FBCE007622A7 /* Utility */,
+				C9313F0C1D20FB80007622A7 /* Plist */,
+			);
+			path = Poaster;
+			sourceTree = "<group>";
+		};
+		C9313EBE1D20F9EC007622A7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EB01D20F932007622A7 /* Main.storyboard */,
+				C9313EB51D20F932007622A7 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		C9313F0B1D20FB2A007622A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EC11D20FADF007622A7 /* BusinessNameViewController.swift */,
+				C9313EC21D20FADF007622A7 /* CallToActionViewController.swift */,
+				C9313EC31D20FADF007622A7 /* ChangePasswordViewController.swift */,
+				C9313EC71D20FADF007622A7 /* DealTableViewController.swift */,
+				C9313EC91D20FADF007622A7 /* EditDefaultActionViewController.swift */,
+				C91354EE1DE0B14000AACA58 /* MyProfileViewController.swift */,
+				C9313ECA1D20FADF007622A7 /* EditDefaultFinalActionViewController.swift */,
+				C9313ECC1D20FADF007622A7 /* FBPagesViewController.swift */,
+				C9313ECD1D20FADF007622A7 /* FinalActionViewController.swift */,
+				C9313ECE1D20FADF007622A7 /* ForgotPasswordViewController.swift */,
+				C9313ECF1D20FADF007622A7 /* FreeTrialViewController.swift */,
+				C9313F121D210439007622A7 /* PoastPreviewViewController.swift */,
+				C9313ED01D20FADF007622A7 /* HomeViewController.swift */,
+				C9313ED11D20FADF007622A7 /* LoginViewController.swift */,
+				C9313ED21D20FADF007622A7 /* MakePoastViewController.swift */,
+				C9313ED31D20FADF007622A7 /* MyProfileTableViewController.swift */,
+				C9313ED51D20FADF007622A7 /* OneDealTableViewController.swift */,
+				C9313ED61D20FADF007622A7 /* PagesViewController.swift */,
+				C9313ED81D20FADF007622A7 /* RegisterViewController.swift */,
+				C9313ED91D20FADF007622A7 /* ResetPasswordViewController.swift */,
+				C9313EDA1D20FADF007622A7 /* SecondViewController.swift */,
+				C9313EDD1D20FADF007622A7 /* SettingsViewController.swift */,
+				C9313EDE1D20FADF007622A7 /* SocialViewController.swift */,
+				C9313EE01D20FADF007622A7 /* StripeDecisionViewController.swift */,
+				C9313EE11D20FADF007622A7 /* StripeSetupViewController.swift */,
+				C9313EE21D20FADF007622A7 /* SubscriptionOptionsViewController.swift */,
+				C9313EE41D20FADF007622A7 /* WelcomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9313F0C1D20FB80007622A7 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EB81D20F932007622A7 /* Info.plist */,
+			);
+			name = Plist;
+			sourceTree = "<group>";
+		};
+		C9313F0D1D20FB98007622A7 /* Model and Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EC51D20FADF007622A7 /* DealModel.swift */,
+				C9313EC61D20FADF007622A7 /* DealTableViewCell.swift */,
+				C9313ECB1D20FADF007622A7 /* FacebookPageModel.swift */,
+				C9313EDB1D20FADF007622A7 /* SellerCustomerListModel.swift */,
+				C9313EDC1D20FADF007622A7 /* SellerCustomerListTableViewCell.swift */,
+			);
+			name = "Model and Cells";
+			sourceTree = "<group>";
+		};
+		C9313F0E1D20FBCE007622A7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C9313EC41D20FADF007622A7 /* Constants.swift */,
+				C9313ED71D20FADF007622A7 /* PoasterUtility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		C9313F111D20FF85007622A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9313F0F1D20FF81007622A7 /* ProximaNova-Light.otf */,
+				C9313F101D20FF81007622A7 /* ProximaNova-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C956E1131D278A2500166EE8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C956E1141D27901A00166EE8 /* Utilities.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9313EA81D20F932007622A7 /* Poaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9313EBB1D20F932007622A7 /* Build configuration list for PBXNativeTarget "Poaster" */;
+			buildPhases = (
+				4751AFB0A4A2D31EB44B31F0 /* [CP] Check Pods Manifest.lock */,
+				C9313EA51D20F932007622A7 /* Sources */,
+				C9313EA61D20F932007622A7 /* Frameworks */,
+				C9313EA71D20F932007622A7 /* Resources */,
+				6FFC2BABF82483E2CB6C0FEA /* [CP] Embed Pods Frameworks */,
+				C55A4736A23383D83FE28A6A /* [CP] Copy Pods Resources */,
+				C968F1CE1D82F8EE00439CC8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Poaster;
+			productName = Poaster;
+			productReference = C9313EA91D20F932007622A7 /* Poaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9313EA11D20F932007622A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Poaster LLC.";
+				TargetAttributes = {
+					C9313EA81D20F932007622A7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = XV2KCKNQTH;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C9313EA41D20F932007622A7 /* Build configuration list for PBXProject "Poaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9313EA01D20F932007622A7;
+			productRefGroup = C9313EAA1D20F932007622A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9313EA81D20F932007622A7 /* Poaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9313EA71D20F932007622A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C979DDBB1DEE8139002605F3 /* book-now-phone.png in Resources */,
+				C979DDBE1DEE8139002605F3 /* check-it-out.png in Resources */,
+				C9313F321D210CF1007622A7 /* ProximaNova-Light.otf in Resources */,
+				C979DDBC1DEE8139002605F3 /* call-now.png in Resources */,
+				C9313F331D210CF1007622A7 /* ProximaNova-Regular.otf in Resources */,
+				C968F1D51D82F97700439CC8 /* TwitterKitResources.bundle in Resources */,
+				C979DDBD1DEE8139002605F3 /* buy-now.png in Resources */,
+				C9313EB71D20F932007622A7 /* LaunchScreen.storyboard in Resources */,
+				C9313EB41D20F932007622A7 /* Assets.xcassets in Resources */,
+				C979DDBA1DEE8139002605F3 /* book-now.png in Resources */,
+				C9313EB21D20F932007622A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4751AFB0A4A2D31EB44B31F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FFC2BABF82483E2CB6C0FEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poaster/Pods-Poaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55A4736A23383D83FE28A6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poaster/Pods-Poaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C968F1CE1D82F8EE00439CC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 596c0439dbac3ba60f4e946b204e6376a9c71cbc 3f60da1dda0de9471d64bb2f89a40bcd7bbc41266f67cc6da07f8821b975ed39";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9313EA51D20F932007622A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9313EFD1D20FADF007622A7 /* PoasterUtility.swift in Sources */,
+				C9313F0A1D20FADF007622A7 /* WelcomeViewController.swift in Sources */,
+				C9313EF71D20FADF007622A7 /* LoginViewController.swift in Sources */,
+				C9313F081D20FADF007622A7 /* SubscriptionOptionsViewController.swift in Sources */,
+				C9313F031D20FADF007622A7 /* SettingsViewController.swift in Sources */,
+				C9313F041D20FADF007622A7 /* SocialViewController.swift in Sources */,
+				C9313F011D20FADF007622A7 /* SellerCustomerListModel.swift in Sources */,
+				C9313EFF1D20FADF007622A7 /* ResetPasswordViewController.swift in Sources */,
+				C9313EEB1D20FADF007622A7 /* DealModel.swift in Sources */,
+				C9313EF51D20FADF007622A7 /* FreeTrialViewController.swift in Sources */,
+				C9313EED1D20FADF007622A7 /* DealTableViewController.swift in Sources */,
+				C9313EE81D20FADF007622A7 /* CallToActionViewController.swift in Sources */,
+				C9313EFC1D20FADF007622A7 /* PagesViewController.swift in Sources */,
+				C9313EEF1D20FADF007622A7 /* EditDefaultActionViewController.swift in Sources */,
+				C956E1151D27901A00166EE8 /* Utilities.swift in Sources */,
+				C9313EE71D20FADF007622A7 /* BusinessNameViewController.swift in Sources */,
+				C9313EAD1D20F932007622A7 /* AppDelegate.swift in Sources */,
+				C9313EFB1D20FADF007622A7 /* OneDealTableViewController.swift in Sources */,
+				C9313EF11D20FADF007622A7 /* FacebookPageModel.swift in Sources */,
+				C9313F001D20FADF007622A7 /* SecondViewController.swift in Sources */,
+				C9313EEC1D20FADF007622A7 /* DealTableViewCell.swift in Sources */,
+				C9313EF01D20FADF007622A7 /* EditDefaultFinalActionViewController.swift in Sources */,
+				C9313F071D20FADF007622A7 /* StripeSetupViewController.swift in Sources */,
+				C9313EF31D20FADF007622A7 /* FinalActionViewController.swift in Sources */,
+				C9313EF81D20FADF007622A7 /* MakePoastViewController.swift in Sources */,
+				C9313F131D210439007622A7 /* PoastPreviewViewController.swift in Sources */,
+				C9313F021D20FADF007622A7 /* SellerCustomerListTableViewCell.swift in Sources */,
+				C9313EF61D20FADF007622A7 /* HomeViewController.swift in Sources */,
+				C9313EF41D20FADF007622A7 /* ForgotPasswordViewController.swift in Sources */,
+				C9313EFE1D20FADF007622A7 /* RegisterViewController.swift in Sources */,
+				C91354EF1DE0B14000AACA58 /* MyProfileViewController.swift in Sources */,
+				C9313EF21D20FADF007622A7 /* FBPagesViewController.swift in Sources */,
+				C9313EE91D20FADF007622A7 /* ChangePasswordViewController.swift in Sources */,
+				C9313F061D20FADF007622A7 /* StripeDecisionViewController.swift in Sources */,
+				C9313EF91D20FADF007622A7 /* MyProfileTableViewController.swift in Sources */,
+				C9313EEA1D20FADF007622A7 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9313EB01D20F932007622A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9313EB11D20F932007622A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9313EB51D20F932007622A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9313EB61D20F932007622A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9313EB91D20F932007622A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "af44ef42-f241-4f9e-aeb7-bec6af7e4d7b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		C9313EBA1D20F932007622A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "af44ef42-f241-4f9e-aeb7-bec6af7e4d7b";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9313EBC1D20F932007622A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4053BB6F6DA2070F90F6AB /* Pods-Poaster.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Poaster/Poaster.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XV2KCKNQTH;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Poaster",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Poaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Armchair\"",
+					"-framework",
+					"\"BXProgressHUD\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Mixpanel\"",
+					"-framework",
+					"\"PinAuto\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Toucan\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poaster.Poaster3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		C9313EBD1D20F932007622A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F17FAA5870829AED8A82A7 /* Pods-Poaster.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Poaster/Poaster.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XV2KCKNQTH;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Poaster",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Poaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"Armchair\"",
+					"-framework",
+					"\"BXProgressHUD\"",
+					"-framework",
+					"\"Bolts\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Mixpanel\"",
+					"-framework",
+					"\"PinAuto\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"Toucan\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.poaster.Poaster3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9313EA41D20F932007622A7 /* Build configuration list for PBXProject "Poaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9313EB91D20F932007622A7 /* Debug */,
+				C9313EBA1D20F932007622A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9313EBB1D20F932007622A7 /* Build configuration list for PBXNativeTarget "Poaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9313EBC1D20F932007622A7 /* Debug */,
+				C9313EBD1D20F932007622A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9313EA11D20F932007622A7 /* Project object */;
+}
