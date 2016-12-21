@@ -58,6 +58,8 @@
 		C979DDBC1DEE8139002605F3 /* call-now.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB71DEE8139002605F3 /* call-now.png */; };
 		C979DDBD1DEE8139002605F3 /* buy-now.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB81DEE8139002605F3 /* buy-now.png */; };
 		C979DDBE1DEE8139002605F3 /* check-it-out.png in Resources */ = {isa = PBXBuildFile; fileRef = C979DDB91DEE8139002605F3 /* check-it-out.png */; };
+		C98FCB8A1E002FBA00B120CC /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98FCB891E002FBA00B120CC /* DecisionViewController.swift */; };
+		C9AADC3F1E0A54BC00695A4E /* ThemeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AADC3E1E0A54BC00695A4E /* ThemeConfig.swift */; };
 		EE45E4E80472D4402277DBEF /* Pods_Poaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC608827C3D01433F1649191 /* Pods_Poaster.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,8 @@
 		C979DDB71DEE8139002605F3 /* call-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "call-now.png"; sourceTree = "<group>"; };
 		C979DDB81DEE8139002605F3 /* buy-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-now.png"; sourceTree = "<group>"; };
 		C979DDB91DEE8139002605F3 /* check-it-out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check-it-out.png"; sourceTree = "<group>"; };
+		C98FCB891E002FBA00B120CC /* DecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionViewController.swift; sourceTree = "<group>"; };
+		C9AADC3E1E0A54BC00695A4E /* ThemeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeConfig.swift; sourceTree = "<group>"; };
 		F0F17FAA5870829AED8A82A7 /* Pods-Poaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poaster/Pods-Poaster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +239,7 @@
 		C9313F0B1D20FB2A007622A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C98FCB891E002FBA00B120CC /* DecisionViewController.swift */,
 				C9313EC11D20FADF007622A7 /* BusinessNameViewController.swift */,
 				C9313EC21D20FADF007622A7 /* CallToActionViewController.swift */,
 				C9313EC31D20FADF007622A7 /* ChangePasswordViewController.swift */,
@@ -290,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				C9313EC41D20FADF007622A7 /* Constants.swift */,
+				C9AADC3E1E0A54BC00695A4E /* ThemeConfig.swift */,
 				C9313ED71D20FADF007622A7 /* PoasterUtility.swift */,
 			);
 			name = Utility;
@@ -473,6 +479,7 @@
 				C9313F081D20FADF007622A7 /* SubscriptionOptionsViewController.swift in Sources */,
 				C9313F031D20FADF007622A7 /* SettingsViewController.swift in Sources */,
 				C9313F041D20FADF007622A7 /* SocialViewController.swift in Sources */,
+				C98FCB8A1E002FBA00B120CC /* DecisionViewController.swift in Sources */,
 				C9313F011D20FADF007622A7 /* SellerCustomerListModel.swift in Sources */,
 				C9313EFF1D20FADF007622A7 /* ResetPasswordViewController.swift in Sources */,
 				C9313EEB1D20FADF007622A7 /* DealModel.swift in Sources */,
@@ -501,6 +508,7 @@
 				C9313EF21D20FADF007622A7 /* FBPagesViewController.swift in Sources */,
 				C9313EE91D20FADF007622A7 /* ChangePasswordViewController.swift in Sources */,
 				C9313F061D20FADF007622A7 /* StripeDecisionViewController.swift in Sources */,
+				C9AADC3F1E0A54BC00695A4E /* ThemeConfig.swift in Sources */,
 				C9313EF91D20FADF007622A7 /* MyProfileTableViewController.swift in Sources */,
 				C9313EEA1D20FADF007622A7 /* Constants.swift in Sources */,
 			);

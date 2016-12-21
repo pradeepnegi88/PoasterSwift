@@ -17,7 +17,7 @@ import TwitterKit
 class SettingsViewController: UIViewController, MFMailComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var mainTableView: UITableView!
-    var settingItems: [String] = ["Email For Help", "Change Password", "Change Action Button", "Poaster 101", "Stripe Dashboard", "Logout"]
+    var settingItems: [String] = ["Email For Help", "Change Password", "Change Marketing Button", "Poaster 101", "Stripe Dashboard", "Logout"]
     
     
     

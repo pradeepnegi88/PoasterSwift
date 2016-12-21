@@ -34,7 +34,7 @@ class RegisterViewController: UIViewController {
         customTextFieldFont()
         
         // Sign up button
-        Utilities.CustomButton(signUpButton, BGCOLOR: "#D35746", BORDERCOLOR: "#D35746", TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
+        Utilities.CustomButton(signUpButton, BGCOLOR: PRIMARY_BUTTON_BG_COLOR, BORDERCOLOR: PRIMARY_BUTTON_BG_COLOR, TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
         
         // Utilities.CustomUITextField(firstNameField)
         // Utilities.CustomUITextField(lastNameField)

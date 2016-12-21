@@ -25,11 +25,7 @@ class ChangePasswordViewController: UIViewController {
         
         Utilities.CustomButton(changePasswordBtn, BGCOLOR: "#D35746", BORDERCOLOR: "#D35746", TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
 
-        customTextFieldFont()
-        
-        Utilities.CustomUITextField(newPasswordField)
-        Utilities.CustomUITextField(confirmPasswordField)
-        
+        customTextFieldFont()        
         indicator.hidden = true
     }
     

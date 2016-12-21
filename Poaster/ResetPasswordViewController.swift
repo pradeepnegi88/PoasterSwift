@@ -29,8 +29,6 @@ class ResetPasswordViewController: UIViewController {
         
         Utilities.CustomButton(SetPasswordbtn, BGCOLOR: "#D35746", BORDERCOLOR: "#D35746", TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
     
-        Utilities.CustomUITextField(PasswordField)
-        Utilities.CustomUITextField(AnotherPasswordField)
     }
     
     func displayAlertMessage(message: String) {

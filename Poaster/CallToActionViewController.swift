@@ -13,12 +13,11 @@ class CallToActionViewController: UIViewController, UIPickerViewDelegate, UIPick
     @IBOutlet weak var ctaPicker: UIPickerView!
     
     @IBOutlet weak var BackgroundImageView: UIImageView!
-    
-    @IBOutlet weak var CTAViewLabel: UILabel!
+
     var receivedBizType: String! = nil
     var receivedBizName: String! = nil
     
-    var ctaData = ["Call Now", "Book Now", "Buy Now", "Check It Out"]
+    var ctaData = ["Call Now", "Book Now", "Check It Out"]
     
     // Businesses Dictionary
     
@@ -28,11 +27,6 @@ class CallToActionViewController: UIViewController, UIPickerViewDelegate, UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        CTAViewLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        CTAViewLabel.numberOfLines = 0
-        
-        currentSelection = ctaData[0]
         
         // Do any additional setup after loading the view.
         self.ctaPicker.delegate = self
@@ -51,8 +45,6 @@ class CallToActionViewController: UIViewController, UIPickerViewDelegate, UIPick
         
         self.navigationController!.navigationBar.tintColor = UIColor(red: 152/256, green: 201/256, blue: 64/256, alpha: 1.0)
         
-        // self.navigationController?.navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "ProximaNova-Regular", size: 22)!], forState: UIControlState.Normal)
-        
         // Changing the case of the Back link
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "BACK", style: .Plain, target: nil, action: nil)
     }
@@ -70,39 +62,32 @@ class CallToActionViewController: UIViewController, UIPickerViewDelegate, UIPick
         }
     }
     
-    func displayBizBackground() {
-        for (key, value) in business {
-            if key == receivedBizType {
-                print("User chose \(value)")
-                let bgImage = UIImage(named: value)
-                self.BackgroundImageView.image = bgImage
-                break
-            }
-        }
-    }
+//    func displayBizBackground() {
+//        for (key, value) in business {
+//            if key == receivedBizType {
+//                print("User chose \(value)")
+//                let bgImage = UIImage(named: value)
+//                self.BackgroundImageView.image = bgImage
+//                break
+//            }
+//        }
+//    }
     
     func chooseCallToAction() {
         
-        if currentSelection == "Buy Now" {
-            print("You chose Buy Now")
-            
-            let StripeDecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("SwitchSBView") as! StripeDecisionViewController
-            
-            StripeDecisionVC.bizName = receivedBizName
-            
-            self.navigationController?.pushViewController(StripeDecisionVC, animated: true)
-
-        } else {
-            
-            let FinalActionVC = self.storyboard?.instantiateViewControllerWithIdentifier("FinalActionView") as! FinalActionViewController
-            
-            FinalActionVC.bizName = receivedBizName
-            
-            FinalActionVC.selectedCallToAction = currentSelection
-            
-            self.navigationController?.pushViewController(FinalActionVC, animated: true)
-            
-        }
+        let FinalActionVC = self.storyboard?.instantiateViewControllerWithIdentifier("FinalActionView") as! FinalActionViewController
+        FinalActionVC.bizName = receivedBizName
+        FinalActionVC.selectedCallToAction = currentSelection
+        self.navigationController?.pushViewController(FinalActionVC, animated: true)
+        
+//        let DecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("DecisionSBView") as! DecisionViewController
+//        
+//        DecisionVC.BusinessTitle = receivedBizName
+//        
+//        DecisionVC.MarketingDecision = currentSelection
+//        
+//        self.navigationController?.pushViewController(DecisionVC, animated: true)
+        
     }
     
     

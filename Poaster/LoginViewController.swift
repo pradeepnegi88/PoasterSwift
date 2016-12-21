@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         activityIndicator.hidden = true
         
         // Login Button
-        Utilities.CustomButton(loginButton, BGCOLOR: "#D35746", BORDERCOLOR: "#D35746", TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
+        Utilities.CustomButton(loginButton, BGCOLOR: PRIMARY_BUTTON_BG_COLOR, BORDERCOLOR: PRIMARY_BUTTON_BG_COLOR, TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
         
         // Utilities.CustomUITextField(emailField)
         // Utilities.CustomUITextField(passwordField)

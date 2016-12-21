@@ -15,7 +15,7 @@ class ForgotPasswordViewController: UIViewController {
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var ForgotPasswordBtn: UIButton!
     @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
-
+    
     let prefs = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
@@ -25,9 +25,7 @@ class ForgotPasswordViewController: UIViewController {
         
         ActivityIndicator.hidden = true
         
-        Utilities.CustomButton(ForgotPasswordBtn, BGCOLOR: "#D35746", BORDERCOLOR: "#D35746", TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
-        
-        Utilities.CustomUITextField(EmailField)
+        Utilities.CustomButton(ForgotPasswordBtn, BGCOLOR: PRIMARY_BUTTON_BG_COLOR, BORDERCOLOR: PRIMARY_BUTTON_BG_COLOR, TITLECOLOR: nil, CornerRadius: 4, BorderWidth: 0, FontName: "ProximaNova-Regular", FontSize: 18)
     }
     
     func isValidEmail(testStr:String) -> Bool {
@@ -52,7 +50,7 @@ class ForgotPasswordViewController: UIViewController {
     @IBAction func SendForgottenPassword(sender: UIButton) {
         ActivityIndicator.hidden = false
         ActivityIndicator.startAnimating()
-
+        
         let Email = EmailField.text!
         let hosturl = "\(HOST)/api/v1/user/forgot_password.json?user[email]=\(Email)"
         
@@ -75,7 +73,7 @@ class ForgotPasswordViewController: UIViewController {
                                 self.prefs.setValue(String(json["data"]["reset_password_token"]), forKey: "reset_password_token")
                                 self.dismissViewControllerAnimated(true, completion: nil)
                             }
-
+                            
                             alert.addAction(firstAction)
                             self.presentViewController(alert, animated: true, completion:nil)
                             

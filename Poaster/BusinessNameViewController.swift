@@ -14,7 +14,6 @@ class BusinessNameViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var DBANameField: UITextField!
     @IBOutlet weak var countLabel: UILabel!
-    @IBOutlet weak var noteLabel: UILabel!
     
     var ReceivedBizType: String! = ""
     var characterCount: Int! = nil
@@ -22,15 +21,11 @@ class BusinessNameViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Utilities.CustomUITextField(DBANameField)
-        
         DBANameField.addTarget(self, action: #selector(BusinessNameViewController.textFieldDidChange), forControlEvents: UIControlEvents.EditingChanged)
         
         let logoImage:UIImage = UIImage(named: "camera-logo.png")!
         self.navigationItem.titleView = UIImageView(image: logoImage)
         
-        noteLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        noteLabel.numberOfLines = 0
 
         self.navigationController!.navigationBar.tintColor = UIColor(red: 152/256, green: 201/256, blue: 64/256, alpha: 1.0)
         

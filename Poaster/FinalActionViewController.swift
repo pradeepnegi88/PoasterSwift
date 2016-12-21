@@ -66,10 +66,6 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
         customTextFieldFont()
         
-        Utilities.CustomUITextField(callNowNumber)
-        Utilities.CustomUITextField(otherCallNowNumber)
-        Utilities.CustomUITextField(url)
-        
         if selectedCallToAction == "Call Now" {
             callNowView.hidden = false
             otherView.hidden = true
@@ -144,9 +140,9 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
                                     print(json)
                                     if json["success"] == true {
                                         
-                                        let SecondVC = self.storyboard!.instantiateViewControllerWithIdentifier("CameraStoryBoardID")
-                                        self.navigationController!.pushViewController(SecondVC, animated: true);
-                                        
+                                        let DecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("DecisionSBView")
+                                        self.navigationController!.pushViewController(DecisionVC!, animated: true)
+
                                         print("API call successful!")
                                         print(json)
                                     } else {
@@ -191,9 +187,9 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
                         let reg_complete = Bool(reg_complete_Flag);
                         self.prefs.setValue(reg_complete, forKey: "registration_completed")
                         
-                        let SecondVC = self.storyboard?.instantiateViewControllerWithIdentifier("CameraStoryBoardID")
-                        self.navigationController!.pushViewController(SecondVC!, animated: true)
-                        
+                        let DecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("DecisionSBView")
+                        self.navigationController!.pushViewController(DecisionVC!, animated: true)
+
                         print("API call successful!")
                         print(json)
                     } else {
@@ -264,8 +260,8 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
                                     let reg_complete = Bool(reg_complete_Flag);
                                     self.prefs.setValue(reg_complete, forKey: "registration_completed")
                                     
-                                    let SecondVC = self.storyboard?.instantiateViewControllerWithIdentifier("CameraStoryBoardID")
-                                    self.navigationController!.pushViewController(SecondVC!, animated: true)
+                                    let DecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("DecisionSBView")
+                                    self.navigationController!.pushViewController(DecisionVC!, animated: true)
                                     
                                     print("API call successful!")
                                 } else {
@@ -284,7 +280,7 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
                 CreateURL(checkItOutURL, CTAAction: "check_it_out")
             }// RMEOVE OPTIONAL FROM THE VALUE
             
-        } else if selectedCallToAction == "Book Now" {
+        } else {
             var urlvalue = url.text!
             let othercallnumbervalue = otherCallNowNumber.text!
             if let AToken = prefs.stringForKey("authtoken") {
@@ -300,13 +296,6 @@ class FinalActionViewController: UIViewController, UIPickerViewDelegate, UIPicke
                     CreateURL(urlvalue, CTAAction: "reservation", BookNowParams: "")
                 }
             }
-        } else {
-            let StripeDecisionVC = self.storyboard?.instantiateViewControllerWithIdentifier("SwitchSBView") as! StripeDecisionViewController
-            
-            StripeDecisionVC.bizName = bizName
-            
-            self.navigationController?.pushViewController(StripeDecisionVC, animated: true)
-            
         }
     }// setBusinessDetail()
     

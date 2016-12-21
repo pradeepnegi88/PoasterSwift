@@ -87,8 +87,13 @@ class StripeSetupViewController: UIViewController, UIWebViewDelegate {
     
     @IBAction func DismissStripeSetup(sender: UIButton) {
         Mixpanel.mainInstance().track(event: "Cancelled Stripe setup")
-        StripeDecisionVC.Switch.on = false
-        dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true) { 
+            // 
+            
+            let MakePoastVC = self.storyboard?.instantiateViewControllerWithIdentifier("MakePoastView") as! MakePoastViewController
+            MakePoastVC.OnePaySwitch.on = false
+            
+        }
     }
     
     
