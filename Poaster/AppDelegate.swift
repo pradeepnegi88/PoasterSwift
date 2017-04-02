@@ -12,12 +12,16 @@ import Crashlytics
 import TwitterKit
 import FBSDKCoreKit
 import IQKeyboardManagerSwift
-import Mixpanel
-import Armchair
 import SwiftyJSON
+import UserNotifications
+
+import Firebase
+import FirebaseInstanceID
+import FirebaseMessaging
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     let prefs = NSUserDefaults.standardUserDefaults()
     
@@ -36,32 +40,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         
+        
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         self.prefs.setValue(false, forKey: "weekly_notification")
         
         // NOTIFICATION BADGE SETTINGS
         UIApplication.sharedApplication().applicationIconBadgeNumber = 0
-        
-        
-        
-        // NOTIFICATION SETTINGS
-        let notificationTypes: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
-        let notificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
-        application.registerForRemoteNotifications()
-        application.registerUserNotificationSettings(notificationSettings)
-        
-        
-        
-        // MIXPANEL SETTINGS
-        Mixpanel.initialize(token: "72fc8ff47d337ed1728742545b2959d1")
-        
-        
-        
-        
-        // ARMCHAIR SETTINGS
-        Armchair.appID("895711397")
-        Armchair.debugEnabled(true)
         
         
         
@@ -141,63 +126,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    // CHECK WHICH NOTIFICATION IS IT
-    // CHECK IF LOGGED IN
-    // CHECK
-    
-    
-    
-    
-    
-    
-    //    if application.applicationState == UIApplicationState.Background {
-    //
-    //    // BACKGROUND
-    //
-    //    if UserInfo["identifier"] == "ProfileSBView" {
-    //    self.prefs.setValue(true, forKey: "weekly_notification")
-    //
-    //    if (prefs.stringForKey("authtoken") == nil) {
-    //    print("not logged in")
-    //    self.prefs.setValue(true, forKey: "weekly_notification")
-    //    }
-    //
-    //    redirectUserToViewController("loginNavigationVC")
-    //    } else if UserInfo["identifier"] == "CameraStoryBoardID" {
-    //    redirectUserToViewController("loginNavigationVC")
-    //    }
-    //
-    //
-    //    } else if(application.applicationState == UIApplicationState.Inactive){
-    //
-    //    // INACTIVE
-    //
-    //    if UserInfo["identifier"] == "ProfileSBView" {
-    //    self.prefs.setValue(true, forKey: "weekly_notification")
-    //    print("weekly notification")
-    //    redirectUserToViewController("loginNavigationVC")
-    //    } else if UserInfo["identifier"] == "CameraStoryBoardID" {
-    //    print("Received daily notification!")
-    //    redirectUserToViewController("loginNavigationVC")
-    //    }
-    //
-    //    }
-    
-    
-    
-    //    if (prefs.stringForKey("authtoken") == nil) {
-    //        redirectUserToViewController("initialVC")
-    //    }
-    
-    
-    
     // Redirecting User Based on the Push Notification Meta Data
     func redirectUserToViewController(storyBoardId: String) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewControllerWithIdentifier(storyBoardId)
         window?.rootViewController = vc
     }
-    
+        
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
         
         let UserInfo = JSON(userInfo)
@@ -221,32 +156,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else if UserInfo["identifier"] == "CameraStoryBoardID" {
             redirectUserToViewController("loginNavigationVC")
         }
-    }
-    
-    
-    // CHECK WHICH MODE APP IS RUNNING IN
-    func IsAppInActiveMode() -> Bool {
-        
-        var Result: Bool = false
-        
-        let AppState = UIApplication.sharedApplication().applicationState
-        if AppState == UIApplicationState.Inactive {
-            Result = false
-        } else if AppState == UIApplicationState.Background {
-            Result = false
-        } else if AppState == UIApplicationState.Active {
-            Result = true
-        }
-        return Result
-    }
-    
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        
-        let characterSet: NSCharacterSet = NSCharacterSet(charactersInString: "<>")
-        let deviceTokenString: String = (deviceToken.description as NSString)
-            .stringByTrimmingCharactersInSet(characterSet)
-            .stringByReplacingOccurrencesOfString( " ", withString: "") as String
-        print("This is a token \(deviceTokenString)")
     }
     
 }
