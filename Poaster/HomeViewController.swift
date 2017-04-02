@@ -12,7 +12,6 @@ import SwiftyJSON
 import FBSDKCoreKit
 import FBSDKLoginKit
 import BXProgressHUD
-import Mixpanel
 
 class HomeViewController: UIViewController {
     
@@ -56,7 +55,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func LoginWithFacebook(sender: UIButton) {
         
-        Mixpanel.mainInstance().track(event: "Facebook login selected")
         
         if FBSDKAccessToken.currentAccessToken() != nil {
             print("wont go to Facebook")
@@ -83,7 +81,6 @@ class HomeViewController: UIViewController {
                         print(FBSDKAccessToken.currentAccessToken().tokenString)
                         self.GrabPersonalDetails(FBSDKAccessToken.currentAccessToken().tokenString)
                     }
-                    Mixpanel.mainInstance().track(event: "Successfully logged in with FaceBook")
                 }// logged in
             }
         } // If FBAccessToken exists

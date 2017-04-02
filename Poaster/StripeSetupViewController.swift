@@ -10,7 +10,6 @@ import UIKit
 import WebKit
 import Alamofire
 import SwiftyJSON
-import Mixpanel
 
 class StripeSetupViewController: UIViewController, UIWebViewDelegate {
     
@@ -86,7 +85,6 @@ class StripeSetupViewController: UIViewController, UIWebViewDelegate {
     }
     
     @IBAction func DismissStripeSetup(sender: UIButton) {
-        Mixpanel.mainInstance().track(event: "Cancelled Stripe setup")
         dismissViewControllerAnimated(true) { 
             // 
             
@@ -187,7 +185,6 @@ class StripeSetupViewController: UIViewController, UIWebViewDelegate {
                                 let StripeAccountID = json["data"]["stripe_account_id"]
                                 if StripeAccountID != "" {
                                     print("Stripe Account set up!")
-                                    Mixpanel.mainInstance().track(event: "Stripe account set up")
                                     self.SetBuyNowBusinessDetail()
                                     self.dismissViewControllerAnimated(true, completion: nil)
                                     modelDismissDelegte?.finalPush()

@@ -11,7 +11,6 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Foundation
 import MessageUI
-import Mixpanel
 import TwitterKit
 
 class SettingsViewController: UIViewController, MFMailComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource {
@@ -176,29 +175,23 @@ class SettingsViewController: UIViewController, MFMailComposeViewControllerDeleg
         {
         case 0  :  //Email
             emailBtnClicked()
-            Mixpanel.mainInstance().track(event: "Email for help tapped")
             break
             
         case 1  : //change password
             changePasswordBtnClicked()
-            Mixpanel.mainInstance().track(event: "Change password tapped")
             break
 
         case 2  : //edit default actions
             editDefaultActionsBtnClicked()
-            Mixpanel.mainInstance().track(event: "Settings - Change of CTA tapped")
             break
         case 3  : //poaster101
             visitPoaster101()
-            Mixpanel.mainInstance().track(event: "Settings - Poaster 101 tapped")
             break
         case 4  : //poaster101
             visitStripeLogin()
-            Mixpanel.mainInstance().track(event: "Settings - Stripe login opened")
             break
         case 5  : //sign out
             signOutBtnClicked()
-            Mixpanel.mainInstance().track(event: "Signed out")
             break
 
         default :

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Mixpanel
 
 protocol ModelDismissDelegte {
     func finalPush()
@@ -48,7 +47,6 @@ class StripeDecisionViewController: UIViewController, ModelDismissDelegte {
     
     @IBAction func BringStripeSetup(sender: UISwitch) {
         if Switch.on {
-            Mixpanel.mainInstance().track(event: "Switch - Stripe setup selected")
             let StripeSetupVC = self.storyboard?.instantiateViewControllerWithIdentifier("StripeSetupSBView") as! StripeSetupViewController
             
             StripeSetupVC.StripeDecisionVC = self

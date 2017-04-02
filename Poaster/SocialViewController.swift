@@ -12,7 +12,6 @@ import SwiftyJSON
 import FBSDKCoreKit
 import FBSDKLoginKit
 import TwitterKit
-import Mixpanel
 
 protocol SocialViewSelectionDelegate {
     func MakeFaceBookInactive ()
@@ -90,8 +89,6 @@ class SocialViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     @IBAction func TwitterAction(sender: UIButton) {
-        Mixpanel.mainInstance().track(event: "Social icon tapped",
-                                      properties: ["Social Network" : "Twitter"])
         sender.selected = !sender.selected;
         if sender.selected {
             providersArr.append("twitter")
@@ -130,14 +127,11 @@ class SocialViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                 sender.selected = !sender.selected;
                 if sender.selected {
                     providersArr.append("facebook")
-                    Mixpanel.mainInstance().track(event: "Social icon tapped",
-                                                  properties: ["Social Network" : "Facebook"])
                     performSegueWithIdentifier("FBPagesSegue", sender: nil)
                 } else {
                     if providersArr.contains("facebook") {
                         if let index = providersArr.indexOf("facebook") {
                             providersArr.removeAtIndex(index)
-                            Mixpanel.mainInstance().track(event: "Facebook avoided")
                         }
                     }
                 }
@@ -297,8 +291,6 @@ class SocialViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     @IBAction func PoastToSocialMedia(sender: UIButton) {
         
-        Mixpanel.mainInstance().track(event: "Poast button tapped")
-        
         if let authtoken = prefs.stringForKey("authtoken"){
             
             let hosturl = "\(HOST)/api/v1/user/poasts/\(PreviewPoastPoastID)/share.json"
@@ -323,7 +315,6 @@ class SocialViewController: UIViewController, UIPickerViewDelegate, UIPickerView
                         let json = JSON(value)
                         if json["success"] == true {
                             print("SuccessFul")
-                            Mixpanel.mainInstance().track(event: "Successfully Poasted")
                             self.setExpiryforPoast()
                         } else {
                             print("UnsuccessFul")

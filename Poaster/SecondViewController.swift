@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Mixpanel
 import AVFoundation
 import MobileCoreServices
 
@@ -143,7 +142,6 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func PressedTakePhoto(sender: UIButton) {
-        Mixpanel.mainInstance().track(event: "Took photo")
         self.capturedImage.hidden = false;
         self.canclButton.hidden = false;
         self.NextButton.hidden = false
@@ -208,7 +206,6 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func changeCamera(sender: UIButton) {
-        Mixpanel.mainInstance().track(event: "Changed camera")
         frontCamera = !frontCamera
         
         if captureSession != nil && input != nil {
@@ -249,14 +246,12 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     
     @IBAction func openCameraRoll(sender: UIButton) {
-        Mixpanel.mainInstance().track(event: "Opened cameraroll")
         openGallary()
     }
     
     @IBAction func applyFilterOnImage(sender: UIButton) {
         self.filterPicker.hidden = false
         self.filterPicker.selectRow(0, inComponent: 0, animated: true)
-        Mixpanel.mainInstance().track(event: "Applied filter")
     }
     
     func cameraWithPosition(position: AVCaptureDevicePosition) -> AVCaptureDevice {
